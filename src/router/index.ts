@@ -3,6 +3,7 @@ import Home from "@components/Home.vue";
 import Exercise1 from "@components/exercises/Exercise1.vue";
 import Exercise2 from "@components/exercises/Exercise2.vue";
 import Exercise3 from "@components/exercises/Exercise3.vue";
+import Exercise4 from "@components/exercises/Exercise4.vue";
 
 export const routes = [
     {
@@ -12,19 +13,25 @@ export const routes = [
     },
     {
         path: "/exo1",
-        name: "Exo1",
+        name: "Static data",
         component: Exercise1
     }
     ,
     {
         path: "/exo2",
-        name: "Exo2",
+        name: "Ref",
         component: Exercise2
     },
     {
         path: "/exo3",
-        name: "Exo3",
+        name: "Props",
         component: Exercise3
+    }
+    ,
+    {
+        path: "/exo4",
+        name: "Lifecycle",
+        component: Exercise4
     }
 ];
 

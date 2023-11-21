@@ -4,7 +4,7 @@
       <div class="content">
         <input type="range" @input="slider=Number.parseInt($event.target.value)" :value="slider">
         <p>I'm Exercise3.vue child ! And i receive props and i cannot change them !</p>
-        <a href="https://vuejs.org/guide/components/props.html#props" target="_blank">Vue3 Documentation : Props</a>
+        <a href="https://vuejs.org/guide/components/props.html#one-way-data-flow" target="_blank">Vue3 Documentation : Props</a>
       </div>
     </template>
     <template #code>

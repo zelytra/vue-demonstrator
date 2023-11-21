@@ -1,20 +1,18 @@
 <template>
   <header>
     <nav>
-      <router-link to="exo1" class="link">
-        Exercise 1
-      </router-link>
-      <router-link to="exo2" class="link">
-        Exercise 2
-      </router-link>
-      <router-link to="exo3" class="link">
-        Exercise 3
+      <router-link class="link" v-for="route in routes.routes" :key="route.name" :to="route.path">
+        {{ route.name }}
       </router-link>
     </nav>
   </header>
 </template>
 
 <script setup lang="ts">
+import {useRouter} from "vue-router";
+import * as routes from '../router/index'
+
+const router = useRouter()
 </script>
 
 
