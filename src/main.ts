@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from "@/router";
 import "@/assets/color.scss"
 import "@/assets/style.scss"
+import "@/assets/inputs.scss"
 
 const app = createApp(App)
 app.directive('click-outside', {

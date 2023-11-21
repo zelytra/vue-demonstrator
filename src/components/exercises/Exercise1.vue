@@ -1,5 +1,5 @@
 <template>
-  <ExerciseDisplayer title="Static value exercise">
+  <ExerciseDisplayer title="Exercise1.vue">
     <template #content>
       <input type="range" v-model="object.slider">
       <input type="text" v-model="object.text">
