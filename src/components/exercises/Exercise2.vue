@@ -1,5 +1,5 @@
 <template>
-  <ExerciseDisplayer title="Exercise1.vue : Static values">
+  <ExerciseDisplayer title="Exercise2.vue : Ref values">
     <template #content>
       <div class="content">
         <input type="range" v-model="object.slider">
@@ -14,11 +14,12 @@
 
 <script setup lang="ts">
 import ExerciseDisplayer from "@/vue/layouts/ExerciseDisplayer.vue";
+import {ref} from "vue";
 
-const object = {
+const object = ref<any>({
   slider: 42,
   text: 'Du texte'
-}
+})
 </script>
 
 <style scoped lang="scss">
