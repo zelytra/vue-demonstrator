@@ -14,15 +14,14 @@
   //z-index: 1;
 }
 
-body{
+body {
   background: var(--primary-background);
   color: var(--primary-text);
 }
 
 html, body {
   background-color: var(--primary-background);
-  min-height: 100vh;
-  height: auto;
+  height: 100vh;
 }
 
 ::-webkit-scrollbar {
