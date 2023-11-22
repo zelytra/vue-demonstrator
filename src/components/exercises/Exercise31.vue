@@ -22,7 +22,7 @@ const props = defineProps({
 })
 
 function updateSliderValue(event: any) {
-  //@ts-ignore For educational purpose only
+  //@ts-ignore For educational purpose only, do not reproduce at home
   props.slider = event.target.value
 }
 </script>
