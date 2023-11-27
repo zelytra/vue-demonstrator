@@ -5,6 +5,7 @@ import Exercise2 from "@components/exercises/Exercise2.vue";
 import Exercise3 from "@components/exercises/Exercise3.vue";
 import Exercise4 from "@components/exercises/Exercise4.vue";
 import Exercise5 from "@components/exercises/Exercise5.vue";
+import Exercise6 from "@components/exercises/Exercise6.vue";
 
 export const routes = [
     {
@@ -36,6 +37,11 @@ export const routes = [
         path: "/exo5",
         name: "Slots",
         component: Exercise5
+    },
+    {
+        path: "/exo6",
+        name: "Computed & v-model",
+        component: Exercise6
     }
 ];
 

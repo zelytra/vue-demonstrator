@@ -13,13 +13,18 @@
 </template>
 
 <script setup lang="ts">
-import {ref} from "vue";
+import {onMounted, ref} from "vue";
 
 const props = defineProps({
-  title: String
+  title: String,
+  defaultDeploy: {type: Boolean, required: false}
 })
 
 const deploy = ref<boolean>(false)
+
+onMounted(() => {
+  if (props.defaultDeploy) deploy.value = props.defaultDeploy
+})
 </script>
 
 <style scoped lang="scss">
