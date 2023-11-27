@@ -2,7 +2,7 @@
   <ExerciseDisplayer title="Exercise6.vue : Computed & v-model" :default-deploy="true">
     <template #content>
       <div class="content">
-        <p @click="counterComputed++">Clique</p>
+        <p @click="(counterComputed as number)++">Clique</p>
       </div>
     </template>
     <template #code>
