@@ -5,3 +5,8 @@ all: unset;
   padding: 4px;
   border: solid 2px var(--main);
 }
+
+a{
+  color: var(--main);
+  text-decoration: underline var(--main);
+}

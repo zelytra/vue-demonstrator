@@ -1,11 +1,11 @@
 <template>
   <Header/>
   <div class="app-wrapper">
-  <router-view v-slot="{ Component }">
-    <transition mode="out-in">
-      <component :is="Component" />
-    </transition>
-  </router-view>
+    <router-view v-slot="{ Component }">
+      <transition mode="out-in">
+        <component :is="Component"/>
+      </transition>
+    </router-view>
   </div>
 </template>
 
@@ -20,7 +20,7 @@ import Header from "@components/Header.vue";
   height: 100vh;
 }
 
-.app-wrapper{
+.app-wrapper {
   height: calc(100vh - 46px);
   overflow: hidden;
 }
